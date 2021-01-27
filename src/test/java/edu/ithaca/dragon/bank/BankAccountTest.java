@@ -30,7 +30,7 @@ class BankAccountTest {
         assertFalse( BankAccount.isEmailValid(""));
         //invalid if '-' is before '@'
         assertFalse(BankAccount.isEmailValid("abc-@mail.com"));
-        //invalid if # of characters after last '.' is 1 or less. This is boundary case
+        //invalid if # of characters after last '.' is 1 or less. This is boundary case.
         assertFalse(BankAccount.isEmailValid("abc.def@mail.c"));
         //invalid if '#' is before '@'
         assertFalse(BankAccount.isEmailValid("abc#def@mail.com"));
