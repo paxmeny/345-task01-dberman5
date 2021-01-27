@@ -24,7 +24,7 @@ class BankAccountTest {
 
     @Test
     void isEmailValidTest(){
-        //valid if characters before '@' and between '@' and '.' are 1 or more in number
+        //valid if characters before '@' and between '@' and '.' are 1 or more in number.
         assertTrue(BankAccount.isEmailValid( "a@b.com"));
         //invalid if string is empty. This is boundary case
         assertFalse( BankAccount.isEmailValid(""));
